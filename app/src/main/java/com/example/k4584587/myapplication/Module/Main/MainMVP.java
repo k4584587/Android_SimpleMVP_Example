@@ -1,5 +1,7 @@
 package com.example.k4584587.myapplication.Module.Main;
 
+import com.example.k4584587.myapplication.Model.Student;
+
 /**
  * Created by k4584587 on 2017. 6. 26..
  */
@@ -7,7 +9,7 @@ package com.example.k4584587.myapplication.Module.Main;
 public class MainMVP {
 
     public interface view {
-        void ToastMessage();
+        void ToastMessage(Student student);
     }
 
     interface  presenter {

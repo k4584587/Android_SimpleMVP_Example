@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.example.k4584587.myapplication.Model.Student;
 import com.example.k4584587.myapplication.Module.Main.MainMVP;
 import com.example.k4584587.myapplication.Module.Main.Presenter;
 import com.example.k4584587.myapplication.R;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements MainMVP.view {
 
 
     @Override
-    public void ToastMessage() {
-        Toast.makeText(this, "Hello!", Toast.LENGTH_SHORT).show();
+    public void ToastMessage(Student student) {
+        Toast.makeText(this, "My Profile - " + student.getName() + " " + student.getAge(), Toast.LENGTH_SHORT).show();
     }
 }
